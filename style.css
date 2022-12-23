@@ -2,16 +2,28 @@
 
 body {
 	line-height: 1.5em;
-	font-size: 16pt;
+	font-size: 16px;
+	border: 0;
 }
 
 h1 {
-	min-width: 100vw;
 	display: inline-block;
+	white-space: nowrap;
+	min-width: 100vw;
+
 	color: white;
 	background: #25318D;
-	white-space: nowrap;
 	text-align: center;
 	line-height: 2em;
-	font-size: 3em;
+	font-size: 50px;
+}
+
+h2 {
+	padding: .5em;
+	border-bottom: solid thick #25138D;
+	text-align: center;
+}
+
+dt {
+	font-weight: bold;
 }
