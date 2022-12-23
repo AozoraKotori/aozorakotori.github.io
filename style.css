@@ -6,8 +6,10 @@ body {
 }
 
 h1 {
+	min-width: 100vw;
+	display: inline-block;
 	color: white;
-	background-color: #25318D;
+	background: #25318D;
 	white-space: nowrap;
 	text-align: center;
 	line-height: 2em;
