@@ -1,1 +1,1 @@
-document.write('<footer>© 2020-2022 蒼空ことり All rights reserved.</footer>')
+document.write('<footer><div class="mid"><p>© 2020-2022 蒼空ことり All rights reserved.</p></div></footer>')
