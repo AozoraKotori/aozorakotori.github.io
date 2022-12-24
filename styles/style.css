@@ -4,12 +4,12 @@ html {
 	margin: 0;
 	border: 0;
 	padding: 0;
+	line-height: 1.5em;
+	font-size: 16px;
 }
 
 .common body {
 	margin: 0 0 0 0;
-	line-height: 1.5em;
-	font-size: 16px;
 }
 
 .common section {
@@ -78,5 +78,6 @@ html {
 	width: 15%;
 	padding-right: 1.5em;
 	float: left;
-	vertical-align: baseline;
+	position: relative;
+	top: 10px;
 }
