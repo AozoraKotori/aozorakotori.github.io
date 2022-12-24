@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
+html {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
 .common body {
+	margin: 0 0 0 0;
 	line-height: 1.5em;
 	font-size: 16px;
-	margin: 0;
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -35,6 +41,11 @@
 	font-size: 40px;
 }
 
+.common footer {
+	margin: 0;
+	background-color: #C7C7C7;
+}
+
 .common dt {
 	display: inline-block;
 	white-space: nowrap;
@@ -46,6 +57,8 @@
 	padding-left: 1em;
 	border-left: thick solid #25318D;
 }
+
+
 
 .center {
 	text-align: center;
