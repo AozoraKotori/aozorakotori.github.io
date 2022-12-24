@@ -10,8 +10,6 @@ html {
 	margin: 0 0 0 0;
 	line-height: 1.5em;
 	font-size: 16px;
-	padding-left: 5%;
-	padding-right: 5%;
 }
 
 .common section {
@@ -43,6 +41,9 @@ html {
 
 .common footer {
 	margin: 0;
+	padding: 0 20vw 0 20vw;
+	max-width: 60vw;
+	min-width: 700px;
 	background-color: #C7C7C7;
 }
 
