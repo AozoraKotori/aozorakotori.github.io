@@ -26,7 +26,7 @@
 	margin: 0;
 	/* margin: 0 にしないと変なすきまが空く*/
 	font-size: 1rem;
-	line-height: 1rem;
+	line-height: 1.5em;
 }
 
 .common section,
@@ -47,12 +47,12 @@ h2 {
 .common h1 {
 	color: white;
 	background: var(--colorM2);
-	font-size: 3em;
+	font-size: 3rem;
 }
 
 .common h2 {
 	border-bottom: solid thick var(--colorM2);
-	font-size: 2.5em;
+	font-size: 2.5rem;
 }
 
 .common p {
@@ -68,10 +68,11 @@ footer {
 .common header {
 	position: sticky;
 	top: 0;
+	z-index: 1000;
 	height: 100px;
 	border-bottom: thick solid var(--colorB2);
 	background-color: var(--colorB5);
-	font-size: 3em;
+	font-size: 3rem;
 	line-height: 2em;
 	font-weight: bold;
 }
@@ -97,11 +98,75 @@ footer {
 
 .common dd {
 	padding: 0 2em 0 2em;
-	margin: 0;
+	margin: 1em 0;
 }
 
 .center {
 	text-align: center;
+}
+
+.button1 a {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	color: var(--colorM2);
+	border-radius: 0.5em;
+}
+
+.button1b a {
+	margin-bottom: 15px;
+	padding: 0;
+	transition: all 0.3s;
+}
+
+.button1b a span {
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	padding: .4em 2em;
+
+	color: var(--colorM2);
+	border: medium solid var(--colorM3);
+	border-radius: 0.5em;
+	background: #fff;
+}
+
+.button1b a:before {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+
+	width: 100%;
+	height: 30px;
+
+	content: "";
+	transition: all 0.3s;
+
+	border: medium solid var(--colorM1);
+	border-radius: 0 0 .5em .5em;
+	background-color: var(--colorM1);
+}
+
+.button1b a:hover {
+	transform: translate(0, 7px);
+}
+
+.button1b a:hover:before {
+	bottom: -8px;
+}
+
+.button1b a:active {
+	transform: translate(0, 14px);
+}
+
+.button1b a:active:before {
+	bottom: -.1px;
 }
 
 #class h2 {
@@ -142,7 +207,7 @@ footer {
 
 #twitter {
 	width: 32px;
-	padding-right: 0.5em;
+	padding: 0 calc(10px + 0.5em) 0 10px;
 	vertical-align: middle;
 }
 
@@ -155,7 +220,7 @@ footer {
 #wix {
 	height: 18px;
 	padding: 8px;
-	padding-right: 0.5em;
+	padding-right: 1em;
 	vertical-align: middle;
 }
 
