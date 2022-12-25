@@ -1,1 +1,7 @@
-document.write('<header>ことりノート</header>');
+document.write(
+	'<header>' +
+	'<div class="container">' +
+	'ことりノート' +
+	'</div>' +
+	'</header>'
+);
