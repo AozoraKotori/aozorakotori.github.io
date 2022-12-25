@@ -1,7 +1,7 @@
 document.write(
 	'<footer>' +
 	'<div>' +
-	'<img id="amazon" src="https://aozorakotori.github.io/kotori-note/images/Amazon-logo-RGB.png" alt="Amazon brand logo">' +
+	'<img id="amazon" src="https://aozorakotori.github.io/kotori-note/images/Amazon-logo.png" alt="Amazon logo">' +
 	'Amazonウィッシュリスト（ほしい物リスト）を公開しています。<br>' +
 	'よろしければご支援ください。ご協力ありがとうございます。' +
 	'</div>' +
