@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root {
+	--colorM1: #131946;
+	--colorM2: #25318D;
+	--colorM3: #384AD3;
+	--colorM4: #8F98E2;
+	--colorM5: #B5BCF0;
+}
+
 html {
 	margin: 0;
 	border: 0;
@@ -14,15 +22,18 @@ html {
 
 .common section {
 	max-width: 60vw;
-	min-width: 700px;
-	padding: 0 20vw 0 20vw;
+	min-width: 1000px;
+	/* padding: 0 20vw 0 20vw; 
+	text-align: center;*/
+	margin: 0 auto;
+
 }
 
 .common h1 {
 	display: block;
 	white-space: nowrap;
 	color: white;
-	background: #25318D;
+	background: var(--colorM2);
 	position: relative;
 	text-align: center;
 	line-height: 2em;
@@ -33,7 +44,7 @@ html {
 	min-width: 100%;
 	display: inline-block;
 	white-space: nowrap;
-	border-bottom: solid thick #25318D;
+	border-bottom: solid thick var(--colorM2);
 	text-align: center;
 	line-height: 2em;
 	font-size: 2.5rem;
@@ -45,10 +56,11 @@ html {
 }
 
 .common footer {
-	margin: 2em 0 0 0;
-	padding: 1em 20vw 0 20vw;
 	max-width: 60vw;
-	min-width: 700px;
+	min-width: 1000px;
+	margin: 0 auto;
+	margin-top: 2em;
+	padding-top: 1em;
 	border-top: thick solid #999;
 	background-color: #C7C7C7;
 }
@@ -62,7 +74,7 @@ html {
 	background-color: #ddd;
 	font-weight: bold;
 	font-size: 1.5rem;
-	border-left: thick solid #25318D;
+	border-left: thick solid var(--colorM2);
 }
 
 .common dd {
@@ -74,10 +86,29 @@ html {
 	text-align: center;
 }
 
+#twitter {
+	width: 32px;
+	padding-right: 0.5em;
+	vertical-align: text-bottom;
+}
+
+#note {
+	height: 32px;
+	padding-right: 0.5em;
+	vertical-align: text-bottom;
+}
+
+#wix {
+	height: 18px;
+	padding: 7px;
+	padding-right: 0.5em;
+	vertical-align: text-bottom;
+}
+
 #amazon {
-	width: 15%;
-	padding-right: 1.5em;
+	width: 150px;
+	padding: 0 2em;
 	float: left;
 	position: relative;
-	top: 10px;
+	top: 5px;
 }
