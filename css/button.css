@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 .button1 a,
-.buttonA a {
+.button2 a,
+.buttonA a,
+.buttonT a,
+.buttonN a {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
@@ -17,15 +20,25 @@
 	color: var(--colorM2);
 }
 
+.button2 a {
+	color: var(--colorS2);
+}
+
 .button1b a,
-.buttonAb {
+.button2b a,
+.buttonAb a,
+.buttonTb a,
+.buttonNb a {
 	margin-bottom: 15px;
 	padding: 0;
 	transition: all 0.3s;
 }
 
 .button1b a span,
-.buttonAb a span {
+.button2b a span,
+.buttonAb a span,
+.buttonTb a span,
+.buttonNb a span {
 	box-sizing: border-box;
 	position: relative;
 	display: block;
@@ -40,6 +53,12 @@
 	background-color: #fff;
 }
 
+.button2b a span {
+	color: var(--colorS2);
+	border: medium solid var(--colorS2);
+	background-color: #fff;
+}
+
 .buttonAb a span:before {
 	display: inline-block;
 	content: "";
@@ -49,6 +68,32 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	vertical-align: text-bottom;
+	transition: all 0.3s;
+}
+
+.buttonTb a span:before {
+	display: inline-block;
+	content: "";
+	width: 24px;
+	height: 16px;
+	padding-right: 1em;
+	background-image: url(../images/Twitter-logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: text-bottom;
+	transition: all 0.3s;
+}
+
+.buttonNb a span:before {
+	display: inline-block;
+	content: "";
+	width: 50px;
+	height: 1em;
+	background-image: url(../images/note-logo.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: text-bottom;
+	transition: all 0.3s;
 }
 
 .buttonAb a span {
@@ -57,8 +102,23 @@
 	background-color: #f90;
 }
 
+.buttonTb a span {
+	color: #fff;
+	border: 0;
+	background-color: #1d9bf0;
+}
+
+.buttonNb a span {
+	border: medium solid #000;
+	color: #000;
+	background-color: #fff;
+}
+
 .button1b a:before,
-.buttonAb a:before {
+.button2b a:before,
+.buttonAb a:before,
+.buttonTb a:before,
+.buttonNb a:before {
 	box-sizing: border-box;
 	position: absolute;
 	bottom: -15px;
@@ -75,18 +135,31 @@
 	background-color: var(--colorM1);
 }
 
-.buttonAb a:before {
+.button2b a:before {
+	border: medium solid var(--colorS1);
+	background-color: var(--colorS1);
+}
+
+.buttonAb a:before,
+.buttonTb a:before,
+.buttonNb a:before {
 	border: medium solid #000;
 	background-color: #000;
 }
 
 .button1b a:hover,
-.buttonAb a:hover {
+.button2b a:hover,
+.buttonAb a:hover,
+.buttonTb a:hover,
+.buttonNb a:hover {
 	transform: translate(0, 7px);
 }
 
 .button1b a:hover:before,
-.buttonAb a:hover:before {
+.button2b a:hover:before,
+.buttonAb a:hover:before,
+.buttonTb a:hover:before,
+.buttonNb a:hover:before {
 	bottom: -8px;
 }
 
@@ -96,23 +169,57 @@
 	transition: all 0.3s;
 }
 
+.button2 a span:active {
+	color: #fff;
+	background-color: var(--colorS2);
+	transition: all 0.3s;
+}
+
 .buttonA a span:active {
 	color: #f90;
 	background-color: #fff;
 	transition: all 0.3s;
 }
 
+.buttonT a span:active {
+	color: #1d9bf0;
+	background-color: #fff;
+	transition: all 0.3s;
+}
+
+.buttonN a span:active {
+	color: #fff;
+	background-color: #000;
+	transition: all 0.3s;
+}
+
 .button1b a:active,
-.buttonAb a:active {
+.button2b a:active,
+.buttonAb a:active,
+.buttonTb a:active,
+.buttonNb a:active {
 	transform: translate(0, 14px);
 }
 
 .button1b a:active:before,
-.buttonAb a:active:before {
+.button2b a:active:before,
+.buttonAb a:active:before,
+.buttonTb a:active:before,
+.buttonNb a:active:before {
 	bottom: -.1px;
 }
 
 .buttonAb a span:active:before {
 	background-image: url(../images/Amazon-Smile.svg);
+	transition: all 0.3s;
+}
+
+.buttonTb a span:active:before {
+	background-image: url(../images/Twitter-logoB.svg);
+	transition: all 0.3s;
+}
+
+.buttonNb a span:active:before {
+	background-image: url(../images/note-logoW.svg);
 	transition: all 0.3s;
 }
