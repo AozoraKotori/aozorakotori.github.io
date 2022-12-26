@@ -36,7 +36,7 @@ jobs:
       - name: Generate the sitemap
         uses: cicirello/generate-sitemap@v1.9.0
         with:
-          base-url-path: '.'
+          base-url-path: https://aozorakotori.github.io/kotori-note
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
