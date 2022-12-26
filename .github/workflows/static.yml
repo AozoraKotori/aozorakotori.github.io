@@ -1,7 +1,7 @@
 # 静的コンテンツを GitHub Pages にデプロイするためのシンプルなワークフロー
 name: Deploy static content to Pages
 
-plugins:
+gems:
   - jekyll-sitemap
 
 on:
