@@ -4,7 +4,6 @@ document.write(
 	'<meta name="author" content="蒼空ことり(@Kotori_Aozora_M)">' +
 	'<link rel="stylesheet" href="https://aozorakotori.github.io/kotori-note/css/style.css">' +
 	'<link rel="stylesheet" href="https://aozorakotori.github.io/kotori-note/css/button.css">' +
-	'<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>' +
 	'< !--Google tag(gtag.js)-- >' +
 	'<script async src="https://www.googletagmanager.com/gtag/js?id=G-18CXH1ZBLW"></script>' +
 	'<script>' +
