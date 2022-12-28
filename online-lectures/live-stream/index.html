@@ -10,11 +10,15 @@
 	<!-- スクリプトファイルの読み込み -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script>
+		var content;
+		$.get("../../html/head.html", function (deta) {
+			cotent = data;
+			$("head").append(conent);
+		});
 		//共通パーツ読み込み
 		$(function () {
 			$("#header").load("../../html/header.html");
 			$("#footer").load("../../html/footer.html");
-			$("head").load("../../html/head.html");
 		});
 	</script>
 </head>
