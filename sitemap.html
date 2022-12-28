@@ -2,15 +2,20 @@
 <html lang="ja" class="common">
 
 <head>
-	<script src="./js/style-input.js"></script>
-	<meta name="description" content="ウェブサイト「ことりノート」のサイトマップです。">
 	<title>サイトマップ | ことりノート</title>
+	<meta name="description" content="ウェブサイト「ことりノート」のサイトマップです。">
+	<!-- CSSファイルの読み込み -->
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/button.css">
+
+	<!-- スクリプトファイルの読み込み -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script>
 		//共通パーツ読み込み
 		$(function () {
 			$("#header").load("./html/header.html");
 			$("#footer").load("./html/footer.html");
+			$("head").load("./html/head.html");
 		});
 	</script>
 </head>
