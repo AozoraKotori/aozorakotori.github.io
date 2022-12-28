@@ -1,6 +1,6 @@
 document.write(
 	'<meta charset="UTF-8">' +
-	'<meta name="viewport" content="width=device-width">' +
+	'<meta name="viewport" content="width=device-width, height=device-height">' +
 	'<meta name="author" content="蒼空ことり(@Kotori_Aozora_M)">' +
 	'<link rel="stylesheet" href="https://aozorakotori.github.io/kotori-note/css/style.css">' +
 	'<link rel="stylesheet" href="https://aozorakotori.github.io/kotori-note/css/button.css">' +
