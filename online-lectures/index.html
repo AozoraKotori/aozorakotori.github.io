@@ -5,10 +5,18 @@
 	<script src="../js/style-input.js"></script>
 	<meta name="description" content="後ほど書きます。待っててね。">
 	<title>あおぞらことりのYouTube講義 | ことりノート</title>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script>
+		//共通パーツ読み込み
+		$(function () {
+			$("#header").load("../header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
 </head>
 
 <body class="common">
-	<script src="../js/header.js"></script>
+	<header id="header"></header>
 
 	<main>
 		<section>
