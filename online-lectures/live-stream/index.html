@@ -5,10 +5,19 @@
 	<script src="../../js/style-input.js"></script>
 	<meta name="description" content="後ほど書きます。待っててね。">
 	<title>ライブ配信の方法 | YouTube講義</title>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script>
+		//共通パーツ読み込み
+		$(function () {
+			$("#header").load("../../html/header.html");
+			$("#footer").load("../../html/footer.html");
+		});
+	</script>
+
 </head>
 
 <body class="common" style="margin:0">
-	<script src="../../js/header.js"></script>
+	<header id="header"></header>
 
 	<main>
 		<section id="class">
@@ -106,5 +115,5 @@
 		</section>
 	</main>
 
-	<script src="../../js/footer.js"></script>
+	<footer id="footer"></footer>
 </body>

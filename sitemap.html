@@ -5,10 +5,18 @@
 	<script src="./js/style-input.js"></script>
 	<meta name="description" content="ウェブサイト「ことりノート」のサイトマップです。">
 	<title>サイトマップ | ことりノート</title>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script>
+		//共通パーツ読み込み
+		$(function () {
+			$("#header").load("./html/header.html");
+			$("#footer").load("./html/footer.html");
+		});
+	</script>
 </head>
 
 <body>
-	<script src="./js/header.js"></script>
+	<header id="header"></header>
 
 	<main>
 		<section>
@@ -20,7 +28,7 @@
 		</section>
 	</main>
 
-	<script src="./js/footer.js"></script>
+	<footer id="footer"></footer>
 </body>
 
 </html>
