@@ -112,6 +112,14 @@ footer {
 	font-size: 1rem;
 }
 
+.common blockquote {
+	padding: 1em;
+	border-left: thick solid var(--colorB3);
+	margin: .5em 1em;
+	color: #555;
+	background-color: var(--colorB4);
+}
+
 .center {
 	text-align: center;
 }
@@ -152,13 +160,9 @@ footer {
 	padding-top: 0;
 }
 
-#twitter {
-	width: 32px;
-	padding: 0 calc(10px + 0.5em) 0 10px;
-	vertical-align: text-bottom;
-}
-
-#note {
+#twitter,
+#note,
+#zenn {
 	position: relative;
 	top: 7px;
 	height: 32px;
