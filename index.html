@@ -3,27 +3,24 @@
 
 <head>
 	<title>ことりノート</title>
-	<link rel="icon" href="./favicon.ico" sizes="any">
-	<link rel="icon" href="./icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="./apple-touch-icon.png">
 	<meta name="description" content="後ほど書きます。待っててね。">
 	<meta name="google-site-verification" content="OFAxarvDf2RvJhZzjvtndu7QQmtX3h_s-eREixwF7hE">
 	<!-- CSSファイルの読み込み -->
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/button.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/button.css">
 
 	<!-- スクリプトファイルの読み込み -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script>
 		var content;
-		$.get("./html/head.html", function (data) {
+		$.get("/html/head.html", function (data) {
 			content = data;
 			$("head").append(content);
 		});
 		//共通パーツ読み込み
 		$(function () {
-			$("#header").load("./html/header.html");
-			$("#footer").load("./html/footer.html");
+			$("#header").load("/html/header.html");
+			$("#footer").load("/html/footer.html");
 		});
 	</script>
 </head>
@@ -36,7 +33,7 @@
 			<h1 style="margin-top:0">「ことりノート」へようこそ！</h1>
 
 			<div class="center button1 button1b" style="font-size: 1.5rem; float: right;">
-				<a href="./sitemap.html"><span style="padding: .5em 6em;">サイトマップ</span></a>
+				<a href="/sitemap.html"><span style="padding: .5em 6em;">サイトマップ</span></a>
 			</div>
 			<p>
 				このウェブサイトでは数学に関する情報や教材を発信します。
@@ -55,7 +52,7 @@
 					<p>YouTubeにて，オンライン授業を想定した講義動画を公開しています。</p>
 					<p>データ容量の大きい動画だけでなく，音声と資料のみで受講できるスタイルも用意しました。</p>
 					<div class="center button1 button1b">
-						<a href="./online-lectures/index.html" style="width:80%" role="button" target="_blank"
+						<a href="/online-lectures/index.html" style="width:80%" role="button" target="_blank"
 							rel="noopener noreferrer"><span>詳細はこちら</span></a>
 					</div>
 				</dd>
@@ -74,7 +71,7 @@
 		<section>
 			<h2>外部のコンテンツ</h2>
 			<dl>
-				<dt><img id="twitter" src="./images/Twitter-logoD.svg" alt="X Icon"> X</dt>
+				<dt><img id="twitter" src="/images/X-logoB.svg" alt="X Icon">@Kotori＿Aozora＿M</dt>
 				<dd style>
 					<div class="buttonT buttonTb" style="float:right; padding-left: 2em;">
 						<a href="https://twitter.com/Kotori_Aozora_M" target="_blank" rel="noopener noreferrer"><span
@@ -84,35 +81,36 @@
 					<p>フォローよろしくお願いします。</p>
 				</dd>
 
-				<dt><img id="note" src="./images/note-logo.svg" alt="note Logo">あおぞらことりの〈すうがく〉</dt>
+				<dt><img id="note" src="/images/note-logo.svg" alt="note Logo">あおぞらことりの〈すうがく〉</dt>
 				<dd>
 					<div class="buttonN buttonNb" style="float:right; padding-left: 2em;">
 						<a href="https://note.com/kotori_aozora_n" target="_blank" rel="noopener noreferrer"><span
 								style="padding: 0.35em 1em;">アクセスはこちらから</span></a>
 					</div>
-					<p>メインブログです。現在研究している数理論理学や，「はじめから一歩ずつ踏みしめる数学」について執筆する予定です。</p>
+					<p>メインブログです。Xの延長線上で利用したり，ZennやMathlogの告知したりします。</p>
 					<p>こちらもフォローよろしくお願いします。</p>
 				</dd>
 
-				<dt><img id="zenn" src="./images/Zenn-icon.svg" alt="Zenn Icon">Zenn</dt>
+				<dt><img id="zenn" src="/images/Zenn-icon.svg" alt="Zenn Icon">Zenn</dt>
 				<dd>
 					<div class="buttonZ buttonZb" style="float:right; padding-left: 2em;">
 						<a href="https://zenn.dev/kotori_aozora_z" target="_blank" rel="noopener noreferrer"><span
 								style="padding: 0.35em 1em;">アクセスはこちらから</span></a>
 					</div>
-					<p>第2ブログです。noteで執筆を予定していた，T<sub style="font-size:1em">E</sub>Xや趣味で少しやっているプログラミングについて執筆します。</p>
+					<p>第2ブログです。T<sub style="font-size:1em">E</sub>Xや趣味で少しやっているプログラミングについて執筆します。</p>
 					<p>こちらもよければフォローお願いします。</p>
-					<blockquote cite="https://zenn.dev/mediakit">
-						<p>Zennは「知見を共有するエンジニアに対価を」をコンセプトとした技術情報共有コミュニティです。</p>
+					
+				</dd>
 
-						<p>開発の知見やアイデアを得たら，気軽に記事にしましょう。</p>
-
-						<p>あなたが詳しいトピックについては，ウェブで読める本にまとめて販売してみましょう。もちろん無料で公開してもOKです。</p>
-
-						<p>
-							Zennには有料のバッジを贈ることで著者を応援する仕組みがあります。バッジを受け取った著者にはZennから現金やAmazonギフト券が還元されます。あなたが残した知見に助けられた誰かが，あなたにバッジを贈ってくれるかもしれません。
-						</p>
-					</blockquote>
+				<dt><img id="zenn" src="/images/Mathlog-icon.png" alt="Mathlog Icon">Mathlog</dt>
+				<dd>
+					<div class="buttonM buttonMb" style="float:right; padding-left: 2em;">
+						<a href="https://mathlog.info/users/3299" target="_blank" rel="noopener noreferrer"><span
+								style="padding: 0.35em 1em;">アクセスはこちらから</span></a>
+					</div>
+					<p>第3ブログです。数理論理学など，幅広く数学について執筆します。</p>
+					<p>こちらもよければフォローお願いします。</p>
+				
 				</dd>
 
 				<dt><img id="wix" src="./images/Wix-logo.svg" alt="Wix Logo">おまる座の屋根裏</dt>

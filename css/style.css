@@ -82,8 +82,7 @@ footer {
 	height: 100px;
 	border-bottom: thick solid var(--colorB2);
 	background-color: var(--colorB5);
-	font-size: 3rem;
-	line-height: 2em;
+	font-size: 3em;
 	font-weight: bold;
 }
 

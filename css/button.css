@@ -5,7 +5,8 @@
 .buttonA a,
 .buttonT a,
 .buttonN a,
-.buttonZ a {
+.buttonZ a,
+.buttonM a {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
@@ -30,7 +31,8 @@
 .buttonAb a,
 .buttonTb a,
 .buttonNb a,
-.buttonZb a {
+.buttonZb a,
+.buttonMb a {
 	margin-bottom: 15px;
 	padding: 0;
 	transition: all 0.3s;
@@ -41,7 +43,8 @@
 .buttonAb a span,
 .buttonTb a span,
 .buttonNb a span,
-.buttonZb a span {
+.buttonZb a span,
+.buttonMb a span {
 	box-sizing: border-box;
 	position: relative;
 	display: block;
@@ -71,7 +74,7 @@
 .buttonTb a span {
 	border: 0;
 	color: #fff;
-	background-color: #1d9bf0;
+	background-color: #000;
 }
 
 .buttonNb a span {
@@ -84,6 +87,12 @@
 	border: medium solid #3EA8FF;
 	color: #000;
 	background-color: #E6F2FF;
+}
+
+.buttonMb a span {
+	border: 0;
+	color: #fff;
+	background-color:#2AA3B2;
 }
 
 .buttonAb a span:before,
@@ -101,7 +110,7 @@
 	width: 100px;
 	height: 1em;
 	vertical-align: text-bottom;
-	background-image: url(../images/Amazon-SmileW.svg);
+	background-image: url(/images/Amazon-SmileW.svg);
 }
 
 .buttonTb a span:before {
@@ -109,7 +118,7 @@
 	height: 16px;
 	padding-right: 1em;
 	vertical-align: text-bottom;
-	background-image: url(../images/Twitter-logo.svg);
+	background-image: url(/images/X-logo.svg);
 }
 
 .buttonNb a span:before {
@@ -117,7 +126,7 @@
 	height: 1.5em;
 	padding-right: 1em;
 	vertical-align: bottom;
-	background-image: url(../images/note-logo.svg);
+	background-image: url(/images/note-logo.svg);
 }
 
 .buttonZb a span:before {
@@ -126,10 +135,23 @@
 	width: 65px;
 	height: 1em;
 	padding-right: 1em;
-	background-image: url(../images/Zenn-logo.svg);
+	background-image: url(/images/Zenn-logo.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	vertical-align: text-bottom;
+	transition: all 0.3s;
+}
+
+.buttonMb a span:before {
+	display: inline-block;
+	content: "";
+	width: 80px;
+	height: 1.3em;
+	padding-right: 1em;
+	background-image: url(/images/Mathlog-logoW.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: -4pt;
 	transition: all 0.3s;
 }
 
@@ -138,7 +160,8 @@
 .buttonAb a:before,
 .buttonTb a:before,
 .buttonNb a:before,
-.buttonZb a:before {
+.buttonZb a:before,
+.buttonMb a:before {
 	box-sizing: border-box;
 	position: absolute;
 	bottom: -15px;
@@ -161,14 +184,16 @@
 }
 
 .buttonAb a:before,
-.buttonTb a:before,
 .buttonNb a:before,
-.buttonZb a:before {
+.buttonMb a:before
+{
 	border: medium solid #000;
 	background-color: #000;
 }
 
-.buttonZb a:before {
+.buttonTb a:before,
+.buttonZb a:before
+{
 	border: medium solid var(--colorB2);
 	background-color: var(--colorB2);
 }
@@ -178,7 +203,8 @@
 .buttonAb a:hover,
 .buttonTb a:hover,
 .buttonNb a:hover,
-.buttonZb a:hover {
+.buttonZb a:hover,
+.buttonMb a:hover {
 	transform: translate(0, 7px);
 }
 
@@ -187,7 +213,8 @@
 .buttonAb a:hover:before,
 .buttonTb a:hover:before,
 .buttonNb a:hover:before,
-.buttonZb a:hover:before {
+.buttonZb a:hover:before,
+.buttonMb a:hover:before {
 	bottom: -8px;
 }
 
@@ -210,7 +237,7 @@
 }
 
 .buttonT a span:active {
-	color: #1d9bf0;
+	color: #000;
 	background-color: #fff;
 	transition: all 0.3s;
 }
@@ -227,12 +254,19 @@
 	transition: all 0.3s;
 }
 
+.buttonM a span:active {
+	color: #000;
+	background-color: #fff;
+	transition: all 0.3s;
+}
+
 .button1b a:active,
 .button2b a:active,
 .buttonAb a:active,
 .buttonTb a:active,
 .buttonNb a:active,
-.buttonZb a:active {
+.buttonZb a:active,
+.buttonMb a:active {
 	transform: translate(0, 14px);
 }
 
@@ -241,26 +275,32 @@
 .buttonAb a:active:before,
 .buttonTb a:active:before,
 .buttonNb a:active:before,
-.buttonZb a:active:before {
+.buttonZb a:active:before,
+.buttonMb a:active:before {
 	bottom: -.1px;
 }
 
 .buttonAb a span:active:before {
-	background-image: url(../images/Amazon-Smile.svg);
+	background-image: url(/images/Amazon-Smile.svg);
 	transition: all 0.3s;
 }
 
 .buttonTb a span:active:before {
-	background-image: url(../images/Twitter-logoB.svg);
+	background-image: url(/images/X-logoB.svg);
 	transition: all 0.3s;
 }
 
 .buttonNb a span:active:before {
-	background-image: url(../images/note-logoW.svg);
+	background-image: url(/images/note-logoW.svg);
 	transition: all 0.3s;
 }
 
 .buttonZb a span:active:before {
-	background-image: url(../images/Zenn-logoW.svg);
+	background-image: url(/images/Zenn-logoW.svg);
+	transition: all 0.3s;
+}
+
+.buttonMb a span:active:before {
+	background-image: url(/images/Mathlog-logo.svg);
 	transition: all 0.3s;
 }
