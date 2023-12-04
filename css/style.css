@@ -32,8 +32,8 @@
 	/* footer を下に張り付かせるための設定 */
 	flex-direction: column;
 	min-height: 100vh;
-	margin: 0;
 	/* margin: 0 にしないと変なすきまが空く*/
+	margin: 0;
 	font-size: 1rem;
 	line-height: 1.5em;
 }

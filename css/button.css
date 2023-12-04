@@ -45,7 +45,7 @@
 	box-sizing: border-box;
 	position: relative;
 	display: block;
-	border-radius: 0.5em;
+	border-radius: 5pt;
 	padding: .4em 2em;
 	transition: all 0.3s;
 }
@@ -145,7 +145,7 @@
 	left: 0;
 	width: 100%;
 	height: 30px;
-	border-radius: 0 0 .5em .5em;
+	border-radius: 0 0 5pt 5pt;
 	content: "";
 	transition: all 0.3s;
 }
